@@ -61,17 +61,17 @@ void main() async {
 
 void _showonTapMessage(BuildContext context, String message) {
   var alert = new AlertDialog(
-     title: Text("My App"),
-     content: Text(message),
-      actions: <Widget>[
-         FlatButton(
-           child: Text("OK"),
-           onPressed: () {
-              Navigator.pop(context);
-           }, )
-      ],
+    title: Text("My App"),
+    content: Text(message),
+    actions: <Widget>[
+      FlatButton(
+        child: Text("OK"),
+        onPressed: () {
+          Navigator.pop(context);
+        }, )
+    ],
   );
- // showDialog(context: context, child: alert);
+  // showDialog(context: context, child: alert);
   showDialog(context: context, builder: (context) => alert);
 }
 
